@@ -17,7 +17,11 @@ def get_boxer_data(data,name_boxer):
 def get_ko_rate(boxer_dict):
         KO_dict = { 
               
-              'KO rate ' + boxer_dict['name']: float(boxer_dict['ko_rate'].replace('%',"")), 
+              'wins ' + boxer_dict['name']: int(boxer_dict['wins']),
+              'looses ' +  boxer_dict['name']: int(boxer_dict['looses']),
+               'draws ' +  boxer_dict['name']: int(boxer_dict['draws'])
+
+
               }
         labels = KO_dict.keys()
         value = KO_dict.values()

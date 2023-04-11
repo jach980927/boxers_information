@@ -10,7 +10,7 @@ def run():
     boxer = result[0]
     labels, values = utils.get_ko_rate(boxer)
 
-    charts.generate_bar_chart(labels, values)
+    charts.generate_pie_chart(labels, values)
 
 
 if __name__ == '__main__':
